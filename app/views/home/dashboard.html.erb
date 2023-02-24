@@ -1,4 +1,8 @@
-<div>
-  <h1 class="font-bold text-4xl">Home#dashboard</h1>
-  <p>Find me in app/views/home/dashboard.html.erb</p>
+<div class="text-center">
+  <h1 class="font-bold text-2xl text-slate-700">You have signed up, <%= current_user.email %> 😃</h1>
+  <p class="text-lg mt-3">Your account has been successfully created!</p>
+
+
+<%#= link_to "Sign out", class: "block text-center underline text-blue-600 mt-4", destroy_user_session_path, method: :delete %>
+ <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "block text-center underline text-blue-600 mt-4" %>
 </div>
